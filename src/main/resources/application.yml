@@ -39,6 +39,5 @@ jwt:
 
 # 微信配置
 wx:
-
-  app-id: wx1751bf3234921bde
-  app-secret: 5e70d3f8253bf8f3be4104486226ae70
+  app-id: xxxxx
+  app-secret: xxxxx
