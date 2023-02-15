@@ -1,0 +1,42 @@
+# 服务器
+server:
+  port: 8080
+
+# Spring 配置
+spring:
+  # 数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/security_wechat?useUnicode=true&useSSL=false&characterEncoding=UTF-8
+    #    url: jdbc:log4jdbc:mysql://localhost:3306/security_wechat?useUnicode=true&useSSL=false&characterEncoding=UTF-8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    driver-class-name: net.sf.log4jdbc.DriverSpy
+
+  # jpa
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      properties:
+        hibernate:
+          dialect: hibernate.dialect.MySQL57InnoDBDialect
+      open-in-view: true
+
+# 日志
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+
+# jwt
+jwt:
+  # 由JwtUtil的generateSignature生成
+  signature: 7EIT2UoFTQOSu3Iy+g3Dwp+R0SbFTfj+avWIQ8hsAQI=
+  ttl: 604800000
+
+# 微信配置
+wx:
+
+  app-id: wx1751bf3234921bde
+  app-secret: 5e70d3f8253bf8f3be4104486226ae70
