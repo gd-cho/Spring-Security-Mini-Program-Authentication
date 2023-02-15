@@ -13,6 +13,8 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   #    driver-class-name: net.sf.log4jdbc.DriverSpy
 
+
+
   # jpa
   jpa:
     show-sql: true
